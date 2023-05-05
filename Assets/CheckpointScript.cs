@@ -22,7 +22,7 @@ public class CheckpointScript : MonoBehaviour
     {
         if (collision.gameObject.layer == 3) //layer that's just for the bird
         {
-            logic.AddScore();
+            logic.AddScore(1);
         }
     }
 }
