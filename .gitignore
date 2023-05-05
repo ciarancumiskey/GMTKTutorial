@@ -1,0 +1,5 @@
+/ProjectSettings/*
+/UserSettings/*
+/Temp/*
+/Logs/*
+*.meta
