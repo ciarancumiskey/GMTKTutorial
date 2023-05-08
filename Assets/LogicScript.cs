@@ -30,4 +30,10 @@ public class LogicScript : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
     }
+
+    [ContextMenu("Quit Game")]
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
