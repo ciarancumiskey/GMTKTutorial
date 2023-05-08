@@ -12,8 +12,11 @@ public class LogicScript : MonoBehaviour
     [ContextMenu("Increase Score")]
     public void AddScore(int scoreIncrease)
     {
-        playerScore += scoreIncrease;
-        playerScoreText.text = playerScore.ToString();
+        if (!gameOverScreen.activeInHierarchy)
+        {
+            playerScore += scoreIncrease;
+            playerScoreText.text = playerScore.ToString();
+        }
     }
 
     [ContextMenu("Restart Game")]
