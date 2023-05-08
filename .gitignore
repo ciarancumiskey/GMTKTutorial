@@ -2,4 +2,17 @@
 /UserSettings/*
 /Temp/*
 /Logs/*
+/Library/
+# VS cache
+.vs/
+# Gradle cache
+.gradle/
+*.csproj
+*.sln
+*.unityproj
 *.meta
+*.svd
+*.user
+*.userprefs
+
+crashlytics-build.properties

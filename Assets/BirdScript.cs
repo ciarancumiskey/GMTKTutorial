@@ -7,6 +7,7 @@ public class BirdScript : MonoBehaviour
     public Rigidbody2D birdBody;
     public float flapStrength;
     public LogicScript logicScript;
+    public AudioSource chirpSound;
     private bool isAlive = true;
 
     // Start is called before the first frame update
@@ -18,6 +19,7 @@ public class BirdScript : MonoBehaviour
     void Update(){
         if (isAlive && Input.GetKeyDown(KeyCode.Space)){
             birdBody.velocity = Vector2.up * flapStrength;
+            chirpSound.PlayOneShot(chirpSound.clip);
         }
     }
 
