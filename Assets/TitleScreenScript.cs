@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreenScript : MonoBehaviour
 {
+    public string levelName; // Needs to match the name of the gameplay scene
+
     public void LoadLevel()
     {
-        SceneManager.LoadScene(1); // The index of the gameplay scene in BuildSettings
+        SceneManager.LoadScene(levelName);
     }
 
     public void QuitGame()
